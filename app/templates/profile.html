@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class= "top" id="imageblock">
+    <img src="{{url_for('static', filename='mypic.jpg', width=100)}}" />
+    <h2 id="fullname">Rohan Lemon</h2>
+    <p id="username">@RL</p>
+     <p id="location">UWI, Kingston, Jamaica</p>
+      <p id="date_joined">{{ date_joined }}</p>
+</div>
+<div class= "bottom">
+    <p id="description">I am Reptor hear me ROAR! I am Reptor the biggest DINOSOAR!!!</p>
+    <div>
+        <table>
+            <tr>
+                <td>Posts</th>
+                <td>Following</th> 
+                <td>Followers</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>250</td>
+                <td>250</td>
+            </tr>
+        </table>
+        </br>
+        <button>Follow</button>
+    </div>
+</div>
+{% endblock %}
